@@ -2,12 +2,13 @@ package nic_tests;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
+import static common.Constants.Urls.*;
 
 public class HomePageTest extends BaseTest {
 
     @Test
-    public void Exmp() {
-        basePage.open("https://www.selenium.dev/");
-        homePage.exmp();
+    public void abc(){
+        basePage.open(NIC_URL);
+        events.eventBooking();
     }
 }

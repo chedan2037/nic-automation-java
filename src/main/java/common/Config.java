@@ -1,5 +1,5 @@
 package common;
 
 public class Config {
-   public final static String BROWSER = "chrome";
+   public final static String BROWSER = "gecko";
 }
