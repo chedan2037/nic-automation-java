@@ -28,10 +28,7 @@ public class Events extends BasePage {
         driver.get("https://www.selenium.dev/");
 
         Actions act = new Actions(driver);
-        WebElement el = driver.findElement(By.cssSelector("body[class=td-home]"));
-
-        act.moveToElement(el,0,0).perform();
-        act.moveByOffset(667, 875).click().build().perform();
+        act.moveToElement(driver.findElement(By.cssSelector("div#main_navbar ul li[class='nav-item mr-4 mb-2 mb-lg-0']:nth-child(3)"))).click().perform();
 
         return this;
     }
