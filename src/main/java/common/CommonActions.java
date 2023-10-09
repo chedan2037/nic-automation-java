@@ -11,7 +11,7 @@ import static common.Config.BROWSER;
 import static common.Constants.TimeoutVariables.IMPLICIT_WAIT;
 
 
-public class Actions {
+public class CommonActions {
     public static WebDriver createDriver() {
         WebDriver driver = null;
 

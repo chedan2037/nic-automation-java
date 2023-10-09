@@ -6,7 +6,7 @@ public class Locators {
 
     public class EventLocators {
 
-        public static final By dayBtn = By.cssSelector("div[name=day_tab]");
+        public static final By dayBtn = By.cssSelector("[name=day_tab]");
 
         public static final By weekBtn = By.cssSelector("div[name=week_tab]");
 
@@ -24,7 +24,7 @@ public class Locators {
     }
 
     public class HomePageLocators {
-        public static final By eventPanel = By.cssSelector("div.dhx_scale_holder:nth-child(1)");
+        public static final By eventPanel = By.cssSelector("div[class='dhx_scale_hour dhx_scale_hour_border']:nth-child(1)");
         public static final By toLoginForm = By.cssSelector("a[id=sign-in]");
 
         public static final By inputLogin = By.cssSelector("input[id=_58_login]");

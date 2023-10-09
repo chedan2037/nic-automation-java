@@ -11,7 +11,7 @@ import static pages.Locators.HomePageLocators.*;
 public class LoginTest extends BaseTest {
 
     @Test
-    void loginTest(){
+    void loginTest() {
         homePage.open(NIC_URL);
         homePage.login();
 

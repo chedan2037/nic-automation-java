@@ -11,8 +11,10 @@ public class HomePageTest extends BaseTest {
 
     @Test
     public void abc() {
-        basePage.open(NIC_URL);
+//        basePage.open(NIC_URL);
 //        homePage.login();
+
+        basePage.open(NIC_135);
         events.eventBooking();
     }
 }

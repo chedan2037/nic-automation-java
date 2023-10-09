@@ -25,4 +25,12 @@ public class BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
+
+
+    public WebElement waitElementIsClickable(WebElement element) {
+        new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.elementToBeClickable(element));
+        return element;
+    }
+
+
 }

@@ -3,11 +3,10 @@ package pages.nic;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pages.base.BasePage;
 
-
-import static pages.Locators.EventLocators.*;
-import static pages.Locators.HomePageLocators.*;
+import static pages.Locators.HomePageLocators.toLoginForm;
 
 
 public class Events extends BasePage {
@@ -16,11 +15,14 @@ public class Events extends BasePage {
     }
 
     public Events eventBooking() {
-        driver.findElement(eventPanel).click();
-        driver.findElement(dayBtn).click();
-        WebElement time = driver.findElement(By.cssSelector("div[class='dhx_scale_hour dhx_scale_hour_border']" + ":nth-child(1)"));
-        time.click();
-        time.click();
+//        driver.findElement(By.cssSelector("[name=day_tab]"));
+
+//        driver.findElement(By.xpath("//div[text()='День']")).click();
+        //X is 72 and Y is 36
+
+//        Actions act = new Actions(driver);
+//
+//        act.moveByOffset(72, 36).click().build().perform();
 
         return this;
     }
