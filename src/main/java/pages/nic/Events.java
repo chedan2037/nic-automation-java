@@ -24,6 +24,15 @@ public class Events extends BasePage {
 //
 //        act.moveByOffset(72, 36).click().build().perform();
 
+
+        driver.get("https://www.selenium.dev/");
+
+        Actions act = new Actions(driver);
+        WebElement el = driver.findElement(By.cssSelector("body[class=td-home]"));
+
+        act.moveToElement(el,0,0).perform();
+        act.moveByOffset(667, 875).click().build().perform();
+
         return this;
     }
 }

@@ -14,7 +14,7 @@ public class HomePageTest extends BaseTest {
 //        basePage.open(NIC_URL);
 //        homePage.login();
 
-        basePage.open(NIC_135);
+//        basePage.open(NIC_135);
         events.eventBooking();
     }
 }
