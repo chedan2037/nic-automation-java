@@ -10,7 +10,7 @@ public class BaseTest {
     protected WebDriver driver = Actions.createDriver();
     protected BasePage basePage = new BasePage(driver);
     protected HomePage homePage = new HomePage(driver);
-
     protected Events events = new Events(driver);
+
 
 }
