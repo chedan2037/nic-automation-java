@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="suite1" verbose="2" >
+
+    <test
+            name="allTests">
+
+        <groups>
+            <run>
+                <include name="allT"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="nic_tests"/>
+        </packages>
+
+    </test>
+
+</suite>

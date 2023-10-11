@@ -19,8 +19,6 @@ public class CommonActions {
 
             case "chrome":
 
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe"); // delete
-
 
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
