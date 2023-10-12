@@ -6,9 +6,9 @@ public class Constants {
         public static int EXPLICIT_WAIT = 20;
     }
 
-    public static class Urls{
+    public static class Urls {
         public static final String NIC_URL = "http://portal.nic.etu/";
-        public static final String NIC_135 = "http://portal.nic.etu/135";
+        public static final String NIC_135_URL = "http://portal.nic.etu/135";
     }
 
 }

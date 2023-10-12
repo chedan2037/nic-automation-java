@@ -5,14 +5,12 @@ import org.testng.annotations.Test;
 
 import static common.Constants.Urls.NIC_URL;
 
-public class LoginTest extends BaseTest {
+public class HomePageTest extends BaseTest {
 
-    @Test
-    void login() {
+    @Test (groups = {"allT"})
+    void previousDate() {
         homePage.open(NIC_URL);
-        homePage.login();
-
-
+        homePage.previousDate();
     }
 
 }
