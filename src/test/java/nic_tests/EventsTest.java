@@ -11,7 +11,7 @@ public class EventsTest extends BaseTest {
     @Test(groups = {"allT"})
     void login() {
         homePage.open(NIC_URL);
-        homePage.login();
+        homePage.login("__LOGIN", "__PASSWORD");
     }
 
     @Test(dependsOnMethods = "login", groups = {"allT"})

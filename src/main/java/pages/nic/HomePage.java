@@ -14,10 +14,10 @@ public class HomePage extends BasePage {
     }
 
 
-    public HomePage login() {
+    public HomePage login(String login, String password) {
         driver.findElement(toLoginForm).click();
-        driver.findElement(inputLogin).sendKeys("dchernomorets");
-        driver.findElement(inputPassword).sendKeys("ma31da01SOPOPO(%");
+        driver.findElement(inputLogin).sendKeys(login);
+        driver.findElement(inputPassword).sendKeys(password);
         driver.findElement(loginBtn).click();
         waitElementIsVisible(driver.findElement(userAvatar));
         return this;

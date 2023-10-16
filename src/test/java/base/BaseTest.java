@@ -6,7 +6,8 @@ import org.testng.annotations.AfterSuite;
 import pages.base.BasePage;
 import pages.nic.Events;
 import pages.nic.HomePage;
-import static common.Config.*;
+
+import static common.Config.CLOSE_BROWSER_AFTER_SUITE;
 
 public class BaseTest {
     protected WebDriver driver = CommonActions.createDriver();

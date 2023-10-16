@@ -7,7 +7,7 @@ import static common.Constants.Urls.NIC_URL;
 
 public class HomePageTest extends BaseTest {
 
-    @Test (groups = {"allT"})
+    @Test(groups = {"allT"})
     void previousDate() {
         homePage.open(NIC_URL);
         homePage.previousDate();
